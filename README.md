@@ -30,3 +30,6 @@ You can modify this class to add your favorite studies.
 - python
 - pandas
 - numpy
+- requests
+- json
+- datetime
