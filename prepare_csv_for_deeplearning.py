@@ -1,8 +1,20 @@
 ## Prepare CSV files from downloaded forex data
-## It creates two csv files
+## It creates two csv files 
+## 		a. One with all columns
+##		b. Other with less columns, more focused towards Deep Learning
+
 import os, sys, json
 import pandas as pd
 import numpy as np
+
+
+#####################################################################
+## Note: Provide the directory where you downloaded oanda forex data,
+## 		 and where you want new CSV files to be stored
+#####################################################################
+oanda_file_dir = '/data/dlaxon/oanda_files'
+processed_oanda_file_dir = '/data/dlaxon/oanda_files/processed'
+
 
 
 wrangleoandadata=WrangleOandaData()
@@ -10,8 +22,7 @@ wrangleoandadata=WrangleOandaData()
 ## get the dataframe with added features for each file
 ##      then put that dataframe in csv format, so that it can be loaded to dlaxon platform
 
-oanda_file_dir = '/data/dlaxon/oanda_files'
-processed_oanda_file_dir = '/data/dlaxon/oanda_files/processed'
+
 
 if not os.path.isdir(processed_oanda_file_dir):
     ## make dir
@@ -34,8 +45,7 @@ for file in  os.listdir(oanda_file_dir):
         print "window :", window
         print "pair_has_JPY:",pair_has_JPY
         df = wrangleoandadata.AddFeatures( csv_file=csv_file, pair_has_JPY=pair_has_JPY, window=window)
-        ## pickle is
-        #pickle.dump(df, open('/tmp/usd_chf_15m.pkl', 'wb'))
+
         ## create csv file
         df = df.dropna()
 

@@ -3,7 +3,6 @@ __author__ = 'kashif'
 import requests, json, sys, os
 import pandas as pd
 import datetime
-import pandas_datareader        ##pip install pandas-datareader
 import rfc3339      ## sudo pip install rfc3339
 class OandaHistoricalData:
     'Oanda Historical Data Class'

@@ -1,14 +1,15 @@
+__author__ = 'kashif'
+## Download historic forex data in candle format.
 ## If start time is given, and we want to pull data till today then, we have to bring data in 5000 increments
 
 granularities = ['M1','M5','M15','M30','H1','H2','H4','H8','D','W','M']
 
 ## 10 Insturments
 insrtuments = ['EUR_USD','GBP_USD','USD_CAD','USD_CHF','USD_JPY','EUR_GBP','EUR_CHF','AUD_USD','EUR_JPY','GBP_JPY']
-#insrtuments = ['GBP_USD','USD_CAD','USD_CHF','USD_JPY','EUR_GBP','EUR_CHF','AUD_USD','EUR_JPY','GBP_JPY']
 for instrument in insrtuments:
     for granularity in granularities:
         start_time = '2000-01-01 00:00'
-        end_time = '2008-05-20 22:00'
+        end_time = '2018-05-20 22:00'
         current_date_reached = 'No'
         last_time = None
         print "---"*40
