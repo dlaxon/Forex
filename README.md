@@ -3,7 +3,8 @@
 
  *Get data in pandas dataframe using sample syntax like:*
  
- df = y.getCandlesData(insrtument='GBP_USD', count=5, candleFormat='midpoint' ,granularity='H4', start=start_time, end=end_time, csv='Y')
+ ohd = OandaHistoricalData()
+ df = ohd.getCandlesData(insrtument='GBP_USD', count=5, candleFormat='midpoint' ,granularity='H4', start=start_time, end=end_time, csv='Y')
 
 OR  
 
