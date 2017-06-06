@@ -16,9 +16,11 @@
 - Percentage Change
 - Bands of pct change
 - Bands of pips change
+
 You can modify this class to add your favorite studies.
 
 4. **prepare_csv_for_deeplearning.py** : is for creating csv files with processed data. It creates two csv files, one is with all columns, and other is with less columns, which are mainly focused on deep learning.
+
 *Do not forget to change following paths*
 - oanda_file_dir = 'exact path where downloaded files are kept'
 - processed_oanda_file_dir = 'exact path where new processed csv files can be stored'
