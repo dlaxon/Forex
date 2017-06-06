@@ -8,7 +8,7 @@
 - granularities = ['M1','M5','M15','M30','H1','H2','H4','H8','D','W','M']
 - insrtuments = ['EUR_USD','GBP_USD','USD_CAD','USD_CHF','USD_JPY','EUR_GBP','EUR_CHF','AUD_USD','EUR_JPY','GBP_JPY']
 
-3. **WrangleOandaData.py** : is for processing downloaded forex candle data, and adds columns like
+3. **WrangleOandaData.py** : is for processing downloaded forex candle data, and adding columns like
 - Bollinger Band
 - High Low difference
 - High Open difference
