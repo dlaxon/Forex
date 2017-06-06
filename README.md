@@ -24,3 +24,9 @@ You can modify this class to add your favorite studies.
 *Do not forget to change following paths*
 - oanda_file_dir = 'exact path where downloaded files are kept'
 - processed_oanda_file_dir = 'exact path where new processed csv files can be stored'
+
+
+## Dependecies
+- python
+- pandas
+- numpy
