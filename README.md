@@ -1,11 +1,13 @@
 # Forex
 1. **OandaHistoricalData.py** :  is for downloading Forex Data from Oanda, by using Oanda's provided rest api.
 
- -- Get data in pandas dataframe using sample syntax like:
+ *Get data in pandas dataframe using sample syntax like:*
  
  df = y.getCandlesData(insrtument='GBP_USD', count=5, candleFormat='midpoint' ,granularity='H4', start=start_time, end=end_time, csv='Y')
 
-OR  use download_all_data.py to download data from multiple instruments in csv format.
+OR  
+
+use download_all_data.py to download data from multiple instruments in csv format.
 2. **download_all_data.py** : is for downloading candle data of 10 currency insturments for different time-intervals
   When you run this code, set start_time, end_time, granualarities and instruments, as per your needs.
 
