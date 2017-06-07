@@ -10,6 +10,7 @@
 OR  
 
 use download_all_data.py to download data from multiple instruments in csv format.
+
 2. **download_all_data.py** : is for downloading candle data of 10 currency insturments for different time-intervals
   When you run this code, set start_time, end_time, granualarities and instruments, as per your needs.
 
@@ -17,6 +18,14 @@ use download_all_data.py to download data from multiple instruments in csv forma
 - end_time = '2018-05-20 22:00'
 - granularities = ['M1','M5','M15','M30','H1','H2','H4','H8','D','W','M']
 - insrtuments = ['EUR_USD','GBP_USD','USD_CAD','USD_CHF','USD_JPY','EUR_GBP','EUR_CHF','AUD_USD','EUR_JPY','GBP_JPY']
+
+3. **download_one_instrument.py** : is for downloading candle data of 1 currency insturments for specific time-interval.
+  When you run this code, set start_time, end_time, granualarity and instrument, as per your needs.
+
+- start_time = '2017-06-01 00:00'
+- end_time = '2017-06-20 22:00'
+- granularity = 'H1'   
+- insrtument = 'EUR_USD' 
 
 3. **WrangleOandaData.py** : is for processing downloaded forex candle data, and adding columns like
 - Bollinger Band
@@ -37,7 +46,7 @@ You can modify this class to add your favorite studies.
 
 
 ## Dependecies
-- python
+- python 2.7
 - pandas
 - numpy
 - requests
