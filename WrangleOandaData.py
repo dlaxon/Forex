@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import cPickle as pickle
 import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+
 
 
 class WrangleOandaData:

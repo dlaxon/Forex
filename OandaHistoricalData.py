@@ -68,6 +68,7 @@ class OandaHistoricalData:
         print url
         print "--"*40
 
+        r = requests.get(url)
 
         data = r.json()
         df = pd.io.json.json_normalize(data['candles'])

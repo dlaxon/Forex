@@ -6,14 +6,15 @@
 import os, sys, json
 import pandas as pd
 import numpy as np
+from WrangleOandaData import WrangleOandaData
 
 
 #####################################################################
 ## Note: Provide the directory where you downloaded oanda forex data,
 ## 		 and where you want new CSV files to be stored
 #####################################################################
-oanda_file_dir = '/data/dlaxon/oanda_files'
-processed_oanda_file_dir = '/data/dlaxon/oanda_files/processed'
+oanda_file_dir = '/tmp/oanda_files'
+processed_oanda_file_dir = '/tmp/oanda_files/processed'
 
 
 

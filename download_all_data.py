@@ -2,6 +2,11 @@ __author__ = 'kashif'
 ## Download historic forex data in candle format.
 ## If start time is given, and we want to pull data till today then, we have to bring data in 5000 increments
 
+from OandaHistoricalData import OandaHistoricalData
+import datetime
+
+y = OandaHistoricalData()
+
 granularities = ['M1','M5','M15','M30','H1','H2','H4','H8','D','W','M']
 
 ## 10 Insturments
