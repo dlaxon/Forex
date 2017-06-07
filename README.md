@@ -27,7 +27,7 @@ use download_all_data.py to download data from multiple instruments in csv forma
 - granularity = 'H1'   
 - insrtument = 'EUR_USD' 
 
-3. **WrangleOandaData.py** : is for processing downloaded forex candle data, and adding columns like
+4. **WrangleOandaData.py** : is for processing downloaded forex candle data, and adding columns like
 - Bollinger Band
 - High Low difference
 - High Open difference
@@ -38,7 +38,7 @@ use download_all_data.py to download data from multiple instruments in csv forma
 
 You can modify this class to add your favorite studies.
 
-4. **prepare_csv_for_deeplearning.py** : is for creating csv files with processed data. It creates two csv files, one is with all columns, and other is with less columns, which are mainly focused on deep learning.
+5. **prepare_csv_for_deeplearning.py** : is for creating csv files with processed data. It creates two csv files, one is with all columns, and other is with less columns, which are mainly focused on deep learning.
 
 *Do not forget to change following paths*
 - oanda_file_dir = 'exact path where downloaded files are kept'
